@@ -19,6 +19,7 @@ app.use('/', function(req,res){
     // to the API (e.g. in case you use sessions)
     res.setHeader('Access-Control-Allow-Credentials', true);
     //__dirname : It will resolve to your project folder.
+    next();
   });
 const server = http.createServer(app);
 const port = 80;
