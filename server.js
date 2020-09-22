@@ -9,7 +9,6 @@ app.use('/', function(req,res){
     res.sendFile(path.join(__dirname+'/express/index.html'));
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-    next();
     });
 const server = http.createServer(app);
 const port = 80;
